@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form </title>
+</head>
+<style>
+    div{
+        border: 1px solid black; 
+        width: 30%;
+    }
+</style>
+
+<body>
+
+    <form>
+        <center>
+            <h1> Book Ticket  </h1>
+        
+        <div>
+            <h4> Coustmer details</h4>
+            <label for="fname"> First Name </label>
+            <input type="text" placeholder="First Name" id="fname"> <br> <br>
+            <label for="lname"> Last Name </label>
+            <input type="text" placeholder="Last Name" id="lname"> <br> <br>
+            <label for="deldate"> Visit Date & Time</label>
+            <input type="datetime-local" id="deldate" placeholder="Date "> <br> <br>
+            
+        </div>
+        <div>
+            <h4>Details of Passengers</h4>
+            <label id="passenger"> total Number of Passengers </label>
+            <input type="number" placeholder=" Total Passengers" id="passenger"> <br><br>
+            <label for="adult"> Number of Adults </label>
+            <input type="number" placeholder="Adult no.(Above age:15)" id="adult"><br><br>
+            <label for="child"> Number of Children</label>
+            <input type="number" placeholder="Children no.(Below age:15)" id="child"><br><br>
+            <button type="submit"> Book Now </button> &nbsp; 
+            <button type="reset"> Reset </button> <br> <br>
+        </div>
+    </center>
+    </form>
+
+</body>
+
+</html>
