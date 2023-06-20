@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    background-color: tomato;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.cup {
+
+    width: 280px;
+    height: 230px;
+    background-color: white;
+    border-bottom-left-radius: 104px;
+    border-bottom-right-radius: 104px;
+    transform: translate(-10%, -10%);
+}
+
+.handle {
+    margin-left: 170px;
+    width: 130px;
+    height: 140px;
+    border: 25px solid white;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.bottom-plate {
+    margin-top: 35px;
+    margin-left: -22px;
+    justify-content: center;
+    width: 150%;
+    height: 20px;
+    border-radius: 0 0 150px 150px;
+    background: white;
+    transform: translate(-10%, -10%);
+}
+
+.steam {
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 15px 15px white;
+}
+
+#steam-one {
+    margin-left: 120px;
+    animation: steam-one 3s ease-out 0.5s infinite;
+}
+
+@keyframes steam-one {
+    0% {
+        transform: translateXY(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+#steam-three {
+    margin-right: 120px;
+    animation: steam-three 6s ease-out 0.5s infinite;
+}
+
+@keyframes steam-three {
+    0% {
+        transform: translateXY(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+#steam-two {
+    animation: steam-two 3s ease-out 0.5s infinite;
+}
+
+#steam-four {
+    animation: steam-four 3s ease-out 1.5s infinite;
+}
+
+@keyframes steam-two {
+    0% {
+        transform: translateXY(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+
+}
+
+@keyframes steam-four {
+    0% {
+        transform: translateXY(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
